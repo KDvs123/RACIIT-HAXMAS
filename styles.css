@@ -216,3 +216,88 @@ body {
     transform: rotate(180deg);
 }
 
+
+/* Contact Us Card */
+
+.contact-heading {
+    margin-bottom: 50px;
+     margin-left: 100px;/* Align with the margin of the first card */
+}
+.contact-heading h2 {
+    font-size: 3rem;
+    color: #fff; /* Match the color scheme */
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #1E1F22;
+    gap: 30px;
+}
+.container .card {
+    width: 330px;
+    height: 416px;
+    padding: 60px 30px;
+    margin: 20px;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #D2047A;
+}
+.container .card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.container .card .content .imgBx {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content .contentBx {
+    text-align: center;
+}
+.container .card .content .contentBx h4 {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.container .card .content .contentBx h5 {
+    color: #6c758f;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.container .card .content .sci {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container .card .content .sci a {
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.4s;
+}
+.container .card .content .sci a:hover {
+    color: #0196e3;
+}
+
