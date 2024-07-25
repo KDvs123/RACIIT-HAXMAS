@@ -301,3 +301,27 @@ body {
     color: #0196e3;
 }
 
+
+/* Custom Scrollbar */
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    
+    
+}
+
+::-webkit-scrollbar-track{
+    background: #1E1F22;
+    
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#D2047A,#6c758f);
+    border-radius: 5px;
+    
+}
+
+
+
