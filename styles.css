@@ -529,13 +529,14 @@ footer {
     right: 0;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow{
-    margin-left: calc(-18px /2 );
-    margin-right: calc(-18px /2 );
+    margin-left: calc(-18px / 2);
+    margin-right: calc(-18px / 2);
 }
 
 .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow{
@@ -570,4 +571,86 @@ footer {
 }
 
 
+/* ---- Responsive Code---- */
 
+@media only screen and (max-width:979px){
+    .ag-timeline_line{
+        left:30px;
+    }
+
+    .ag-timeline_item:nth-child(2n){
+        text-align:left;
+    }
+
+    .ag-timeline-card_box, .ag-timeline_item:nth-child(2n) .ag-timeline-card_box{
+        padding: 0 0 20px;
+    }
+
+    .ag-timeline-card_meta-box{
+        display: none;
+    }
+
+    .ag-timeline-card_point-box, .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box{
+        margin: 0 0 0 8px;
+
+    }
+
+    .ag-timeline-card_point{
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+
+    }
+
+    .ag-timeline-card_item{
+        width: auto;
+        margin: -65px 0 0 75px;
+    }
+
+    .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+    .ag-timeline_item:nth-child(2n) .ag-timeline-card_item{
+        -webkit-transform: translateX(200%);
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -o-transform: translateX(200%);
+        transform: translateX(200%);
+    }
+
+    .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow{
+        right: auto;
+        left: 0;
+    }
+
+    .ag-timeline-card_arrow{
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .Container{
+        width: 96%;
+    }
+
+    .ag-timeline-card_img{
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 639px){
+    .secTitle{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:979px){
+    .Container{
+        width: 750px;
+    }
+}
+
+@media (min-width:980px) and (max-width:1161px){
+    .Container{
+        width: 960px;
+    }
+}
