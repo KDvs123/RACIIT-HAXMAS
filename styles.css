@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    overflow-x: hidden;
     overflow: auto;
     height: 100vh;
     background-color: #1E1F22;
@@ -422,7 +422,7 @@ footer {
 .ag-timeline_line-progress{
     width: 100%;
     height: 20%;
-    background-color:#03a9f4 ;
+    background-color:#FF69B4 ;
 }
 
 .ag-timeline-card_box{
@@ -438,10 +438,10 @@ footer {
     margin: 0 14px 0 -28px;
 }
 
-.ag-timeline_item:nth-child(2nd) .ag-timeline-card_point-box{
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box{
     margin: 0 -28px 0 14px;
 }
-
+/**/
 .ag-timeline-card_point{
     height: 50px;
     line-height: 50px;
