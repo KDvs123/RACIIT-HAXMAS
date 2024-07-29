@@ -46,7 +46,6 @@ body {
   flex: 1;
   padding: 20px;
   text-align: left;
- 
 }
 
 .text-section h1 {
@@ -98,78 +97,10 @@ body {
   text-align: center;
 }
 
-.hackathon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(
-    100vh - 500px
-  ); /* Adjust this value based on your navigation bar height */
-  width: 100%;
-  margin-top: 80px;
-}
-
-.accordion_tab {
-  max-width: 640px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.accordian_tab_wrapper {
-  display: flex;
-  gap: 80px;
-}
-
-.accordion_tab_group .tab {
-  cursor: pointer;
-  padding: 30px 50px;
-  margin: 8px 2px;
-  background: #1e1f22;
-  width: 100%;
-  font-size: 20px;
-  display: inline-block;
-  color: #bc6c25;
-  border-radius: 10px;
-  box-shadow: 0 0.5rem 0.8rem #eadad81e;
-  border: 2px solid #bc6c2520;
-}
-
-.accordion_tab_group .tab:hover {
-  background: #393939;
-  color: #d2047a;
-}
-
-#one:checked ~ .accordion_tab_group #one-tab,
-#two:checked ~ .accordion_tab_group #two-tab,
-#three:checked ~ .accordion_tab_group #three-tab {
-  background: #bc6c25;
-  color: #1e1f22;
-}
-
-.accordian_tab_wrapper input[type="radio"] {
-  display: none;
-}
-
-.accordion_tab_contents {
-  background-image: url(register.png);
-  color: #fff;
-  padding: 10px;
-  border-radius: 20px;
-  
-   
-}
+/* About Haxmas CSS*/
 
 
 
-#one:checked ~ .accordion_tab_contents #one-tab-content,
-#two:checked ~ .accordion_tab_contents #two-tab-content,
-#three:checked ~ .accordion_tab_contents #three-tab-content {
-  display: block;
-}
-
-.accordion_tab_contents .accordion_tab_content {
-  display: none;
-}
 /* Preloader styles */
 #preloader {
   position: fixed;
@@ -184,6 +115,35 @@ body {
   align-items: center;
 }
 
+/* Back to top Button*/
+
+#progress{
+  background-color: ;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color:#fff ;
+  border-radius: 50%;
+  display:grid;
+  place-items:center ;
+  font-size: 35px;
+  color: #001a2e;
+
+
+}
 /* Parallax effect */
 .parallax {
   background-attachment: fixed;
@@ -654,10 +614,10 @@ footer {
 }
 
 .ag-timeline_line {
-  width: 8px;
+  width: 12px;
   background-color: #393935;
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 50%;
   bottom: 0;
   overflow: hidden;
@@ -670,8 +630,10 @@ footer {
 
 .ag-timeline_line-progress {
   width: 100%;
-  height: 20%;
+  height: 100%;
   background-color: #ff69b4;
+  
+  
 }
 
 .ag-timeline-card_box {
@@ -806,7 +768,6 @@ footer {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 
 ::-webkit-scrollbar-track {
   background: #1e1f22;
