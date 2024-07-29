@@ -99,8 +99,6 @@ body {
 
 /* About Haxmas CSS*/
 
-
-
 /* Preloader styles */
 #preloader {
   position: fixed;
@@ -117,8 +115,7 @@ body {
 
 /* Back to top Button*/
 
-#progress{
-  background-color: ;
+#progress {
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -127,22 +124,20 @@ body {
   display: none;
   place-items: center;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-#progress-value{
+#progress-value {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color:#fff ;
+  background-color: #fff;
   border-radius: 50%;
-  display:grid;
-  place-items:center ;
+  display: grid;
+  place-items: center;
   font-size: 35px;
   color: #001a2e;
-
-
 }
 /* Parallax effect */
 .parallax {
@@ -173,10 +168,6 @@ body {
   backdrop-filter: blur(10px); /* Apply blur effect */
   color: white;
   padding: 10px 20px;
-  border-radius: 10px;
-  margin: 10px auto;
-  width: 80%;
-  max-width: 1000px;
 }
 
 .navbar-left,
@@ -199,11 +190,6 @@ body {
   transition: background 0.3s;
 }
 
-.navbar a:hover {
-  background-color: #575757;
-  border-radius: 5px;
-}
-
 .logo {
   font-size: 1.5em;
   font-weight: bold;
@@ -220,11 +206,6 @@ body {
   display: inline-block;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.3s;
-}
-
-.register-btn:hover {
-  background-color: #45a049;
-  transform: scale(1.1);
 }
 
 .content {
@@ -244,6 +225,53 @@ body {
   font-size: 0.3em;
 }
 
+/* Haxmas About */
+.haxmas-container {
+  text-align: center;
+  margin: auto;
+  max-width: 1500px;
+  color: white;
+}
+h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.phases {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.phase {
+  background-image: url(register.png);
+  padding: 45px;
+  border-radius: 10px;
+  width: 32%;
+  position: relative;
+}
+.phase h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.phase p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+.phase img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -150px;
+  right: -60px;
+}
+
+.phase span {
+  font-size: 90px;
+  font-weight: bold;
+  color: #2fc18c;
+}
 /* Price Awards Styling */
 
 .prizes-section {
@@ -459,11 +487,6 @@ footer {
   max-width: 60%;
 }
 
-.footer-left .footer-logo img {
-  max-width: 150px;
-  margin-bottom: 10px;
-}
-
 .footer-right {
   text-align: right;
 }
@@ -632,8 +655,6 @@ footer {
   width: 100%;
   height: 100%;
   background-color: #ff69b4;
-  
-  
 }
 
 .ag-timeline-card_box {
@@ -766,11 +787,11 @@ footer {
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1f22;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
