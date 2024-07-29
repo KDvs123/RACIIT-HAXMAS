@@ -15,6 +15,14 @@
     />
   </head>
   <body>
+
+    <!--Loading Screen-->
+
+    <div id="preloader">
+        <dotlottie-player src="https://lottie.host/42448c58-e10e-4535-a45b-ddfe0784c2e9/WgPRrnd03k.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+
+    </div>
+  
     <!--Navigation Bar-->
 
     <nav class="navbar">
@@ -27,7 +35,7 @@
         <a href="#faq">FAQ</a>
       </div>
       <div class="navbar-right">
-        <a href="#register" class="register-btn">Register</a>
+        <button class="register-btn">Register</button>
       </div>
     </nav>
 
@@ -37,18 +45,71 @@
       <h1>HAXMAS <sup>2024</sup></h1>
     </div>
 
+    <!-- Hackothon Phases -->
+    <div class="phase-title">
+       <h2>Three Phases of Haxmas</h2>
+    </div>
+   
+
+    <div class="hackathon-container">
+      <div class="accordion_tab">
+        <div class="accordian_tab_wrapper">
+          <input type="radio" id="one" name="accordion_group" class="radio" checked>
+          <input type="radio" id="two" name="accordion_group" class="radio" checked>
+          <input type="radio" id="three" name="accordion_group" class="radio" checked>
+          <div class="accordion_tab_group">
+            <label for="one" class="tab" id="one-tab">Ideanthon</label>
+            <label for="two" class="tab" id="two-tab">Designthon</label>
+            <label for="three" class="tab" id="three-tab">Finale</label>
+          </div>
+          <div class="accordion_tab_contents">
+            <div class="accordion_tab_content" id="one-tab-content">
+              <h2 class="accordion_tab_title">
+                Ideanthon
+              </h2>
+              <p class="accordion_tab_description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam unde, explicabo quisquam sint magni iste nobis omnis assumenda, laudantium fuga sed cum! Doloribus unde ipsa, laboriosam maxime eum animi quaerat.
+              </p>
+            </div>
+
+            <div class="accordion_tab_content" id="two-tab-content">
+              <h2 class="accordion_tab_title">
+                Designthon
+              </h2>
+              <p class="accordion_tab_description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam unde, explicabo quisquam sint magni iste nobis omnis assumenda, laudantium fuga sed cum! Doloribus unde ipsa, laboriosam maxime eum animi quaerat.
+              </p>
+            </div>
+
+            <div class="accordion_tab_content" id="three-tab-content">
+              <h2 class="accordion_tab_title">
+                Finale
+              </h2>
+              <p class="accordion_tab_description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam unde, explicabo quisquam sint magni iste nobis omnis assumenda, laudantium fuga sed cum! Doloribus unde ipsa, laboriosam maxime eum animi quaerat.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
     <!--Price Awards Section-->
 
     <section class="prizes-section">
       <h2>Amazing Prizes</h2>
       <div class="prizes">
         <div class="prize">
-          <img src="file.png" alt="First Prize" />
-          <p>50k cash prize with an internship at Ascentic</p>
+          <img src="second.png" alt="First Prize" />
+          <p>30k cash prize</p>
         </div>
         <div class="prize prize-highlight">
-          <img src="file.png" alt="Second Prize" />
-          <p>30k cash prize</p>
+          <img src="first.png" alt="Second Prize" />
+          
+          <p>50k cash prize with an internship at Ascentic</p>
         </div>
         <div class="prize">
           <img src="file.png" alt="Third Prize" />
@@ -343,6 +404,24 @@
       </section>
     </div>
 
+    <!--Register -->
+    <section id="register">
+        <div class="register-container">
+            <div class="register-content">
+                <div class="text">
+                    <h2>Enlist to the battle of startups!</h2>
+                    <p>Join us as we dive into the realms of creativity and entrepreneurship, shaping the future one idea at a time. Don't miss out - secure your spot today!</p>
+                    <p><b>Registration deadline: 27th February</b></p>
+                     <div class="buttons">
+                        <a class="btn" href="https://codesprint.lk/CODESPRINT_8-Delegate_Booklet">Delegate Booklet</a>
+                        <a class="btn" href="https://ieee.iit.ac.lk/CODESPRINT_8-Registration_Form">Registrations Closed</a>
+                    </div>
+                </div>
+                <img src="man.jpg" class="astronaut" alt="Astronaut Image">
+            </div>
+        </div>
+    </section>
+    
     <!-- Footer -->
 
     <footer>
@@ -390,6 +469,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
     <script src="script.js"></script>
   </body>
 </html>
