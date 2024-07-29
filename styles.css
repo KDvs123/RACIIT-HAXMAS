@@ -35,17 +35,19 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 20px;
+
   padding: 20px;
-  background-color: #1e1f22;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 100px auto; /* Center the container */
+  opacity: 0; /* Start hidden */
+  transform: translateX(-100%); /* Start off-screen */
+  transition: opacity 1s, transform 1s; /* Smooth transition */
 }
 
 .text-section {
   flex: 1;
   padding: 20px;
   text-align: left;
+   margin-right: 20px;
 }
 
 .text-section h1 {
@@ -58,6 +60,7 @@ body {
   font-size: 1.2em;
   color: #e7e5e5;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .text-section button {
@@ -86,6 +89,16 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /*Loading Screen */
@@ -226,11 +239,14 @@ body {
 }
 
 /* Haxmas About */
-.haxmas-container {
+.aboutus-container {
   text-align: center;
   margin: auto;
   max-width: 1500px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 h1 {
   font-size: 36px;

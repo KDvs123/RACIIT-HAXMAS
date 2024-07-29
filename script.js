@@ -102,3 +102,21 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const haxmasContainer = document.querySelector(".haxmas-container");
+
+  function handleScroll() {
+    const containerPosition = haxmasContainer.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3; // Adjust this value to control when the animation triggers
+
+    if (containerPosition < screenPosition) {
+      haxmasContainer.classList.add("visible");
+      haxmasContainer.classList.remove("hidden");
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Initial check in case the element is already in view
+  handleScroll();
+});
