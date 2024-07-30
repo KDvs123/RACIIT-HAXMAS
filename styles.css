@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: "Oxanium", Helvetica, Arial, sans-serif;
-  background-image: url("images/haxmas2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@ body {
   height: 100vh;
   background-color: #1e1f22;
   transition: background-image 1s ease-in-out;
-  padding-top: 200px;
+  
 }
 
 /* What is haxmas styling */
@@ -220,20 +219,21 @@ body {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.content {
+.hax-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px); /* Adjust height to account for navbar */
+  height: calc(100vh - 0px); /* Adjust height to account for navbar */
   text-align: center;
   color: white;
+  background-image: url("images/haxmas2.jpg");
 }
 
-.content h1 {
+.hax-content h1 {
   font-size: 15em;
 }
 
-.content sup {
+.hax-content sup {
   font-size: 0.3em;
   margin-top: 1000px;
 }

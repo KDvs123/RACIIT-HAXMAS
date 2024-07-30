@@ -131,3 +131,19 @@ faqs.forEach((faq)=>{
     faq.classList.toggle("active");
   })
 })
+
+
+/* Haxmas Phases */
+
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
+
+// room container
+ScrollReveal().reveal(".phase", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
