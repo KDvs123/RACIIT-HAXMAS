@@ -120,3 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check in case the element is already in view
   handleScroll();
 });
+
+
+/*  FAQL JS implementation */
+
+const faqs=document.querySelectorAll(".faq");
+
+faqs.forEach((faq)=>{
+  faq.addEventListener("click",(e)=>{
+    faq.classList.toggle("active");
+  })
+})
