@@ -33,10 +33,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-
-  padding: 20px;
-  margin: 100px auto; /* Center the container */
+  max-width: 1500px;
+  
+  padding: 50px;
+  gap: 100px;
   opacity: 0; /* Start hidden */
   transform: translateX(-100%); /* Start off-screen */
   transition: opacity 1s, transform 1s; /* Smooth transition */
@@ -47,10 +47,11 @@ body {
   padding: 20px;
   text-align: left;
   margin-right: 20px;
+ 
 }
 
 .text-section h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin: 0 0 20px 0;
   color: #fff;
 }
@@ -62,32 +63,21 @@ body {
   margin-bottom: 20px;
 }
 
-.text-section button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-}
 
-.text-section button:hover {
-  background-color: #0056b3;
-}
 
 .image-section {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .image-section img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  transform: scale(1.2);
+  
 }
 
 .hidden {
