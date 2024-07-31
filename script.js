@@ -148,21 +148,36 @@ ScrollReveal().reveal(".image-section img", {
 
 ScrollReveal().reveal(".text-section h1", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 1000,
 });
 
 
 
 ScrollReveal().reveal(".text-section p", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 1000,
 });
 
 
 
-// room container
+// haxmas phases  container
 ScrollReveal().reveal(".phase", {
   ...scrollRevealOption,
-  interval: 500,
+  interval: 1000,
+});
+
+
+// faq section
+
+ScrollReveal().reveal(".faq-container .faq", {
+  ...scrollRevealOption,
+  interval: 1000,
+  origin: "left",
+});
+
+ScrollReveal().reveal(".contact-container", {
+  ...scrollRevealOption,
+  interval: 2000,
+  origin: "left",
 });
 
