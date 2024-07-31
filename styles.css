@@ -735,7 +735,7 @@ footer {
 }
 
 .Main {
-  padding: 300px 0;
+  padding: 200px 0;
 }
 
 .TopTitle {
@@ -744,8 +744,9 @@ footer {
 }
 
 .secTitle {
-  color: #ffeb3b;
+  color: #fff;
   font-size: 60px;
+  
 }
 
 .ag-timeline_item {
@@ -856,6 +857,9 @@ footer {
   -o-transition: -o-transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s;
   position: relative;
+  color: white;
+
+  
 }
 
 .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {

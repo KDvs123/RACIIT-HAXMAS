@@ -68,39 +68,38 @@
   });
 })(jQuery);
 
-  window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
 
-    // Display the preloader for 6 seconds
-    setTimeout(function () {
-      preloader.style.display = "none";
-    }, 2800); // 6000 milliseconds = 6 seconds
-  });
+  // Display the preloader for 6 seconds
+  setTimeout(function () {
+    preloader.style.display = "none";
+  }, 2800); // 6000 milliseconds = 6 seconds
+});
 
-  
 // js code for scroll to top
 
-let calcScrollValue = ()=>{
+let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
-  let pos= document.documentElement.scrollTop;
-  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100)/calcHeight);
-  if(pos > 100){
-    scrollProgress.style.display="grid";
-  }else{
-    scrollProgress.style.display="none";
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
   }
-  scrollProgress.addEventListener("click",()=>{
-    document.documentElement.scrollTop=0;
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
   });
   scrollProgress.style.background = `conic-gradient(#d2047a ${scrollValue}% , #1e1f22 ${scrollValue}%)`;
-  
-}
+};
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const haxmasContainer = document.querySelector(".haxmas-container");
@@ -121,17 +120,15 @@ document.addEventListener("DOMContentLoaded", function () {
   handleScroll();
 });
 
-
 /*  FAQL JS implementation */
 
-const faqs=document.querySelectorAll(".faq");
+const faqs = document.querySelectorAll(".faq");
 
-faqs.forEach((faq)=>{
-  faq.addEventListener("click",(e)=>{
+faqs.forEach((faq) => {
+  faq.addEventListener("click", (e) => {
     faq.classList.toggle("active");
-  })
-})
-
+  });
+});
 
 /* Haxmas Phases */
 
