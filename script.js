@@ -138,6 +138,28 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
+// about Haxmas JS code
+
+// about container
+ScrollReveal().reveal(".image-section img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+
+ScrollReveal().reveal(".text-section h1", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+
+
+ScrollReveal().reveal(".text-section p", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+
+
 // room container
 ScrollReveal().reveal(".phase", {
   ...scrollRevealOption,
