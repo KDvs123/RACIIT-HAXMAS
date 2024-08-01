@@ -177,7 +177,7 @@ ScrollReveal().reveal(".faq-container .faq", {
 
 ScrollReveal().reveal(".contact-container .contact-card", {
   ...scrollRevealOption,
-  interval: 1000,
+  interval: 500,
   origin: "left",
 });
 

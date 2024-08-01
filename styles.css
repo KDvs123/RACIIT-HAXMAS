@@ -183,13 +183,41 @@ body {
   flex-grow: 1;
 }
 
-.navbar a {
-  color: white;
+.navbar .nav-bar {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
   text-decoration: none;
-  margin: 0 15px;
-  padding: 5px 10px;
-  transition: background 0.3s;
+  color: #fff;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  
+  
+
 }
+
+
+
+
+.nav-bar::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #d2047a;
+}
+
+.nav-bar-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-bar-ltr:hover::before{
+  width: 100%;
+}
+
 
 .logo {
   font-size: 1.5em;
@@ -535,7 +563,8 @@ footer {
 }
 
 .footer-right {
-  text-align: right;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .footer-right h3 {
@@ -665,6 +694,10 @@ footer {
 
 .footer-bottom p {
   margin: 0;
+}
+
+.email{
+  margin-top: 30px;
 }
 
 /* Register */
