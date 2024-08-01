@@ -135,7 +135,7 @@ faqs.forEach((faq) => {
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
-  duration: 1000,
+  duration: 500,
 };
 
 // about Haxmas JS code
@@ -148,14 +148,14 @@ ScrollReveal().reveal(".image-section img", {
 
 ScrollReveal().reveal(".text-section h1", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500,
 });
 
 
 
 ScrollReveal().reveal(".text-section p", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500,
 });
 
 
@@ -163,7 +163,7 @@ ScrollReveal().reveal(".text-section p", {
 // haxmas phases  container
 ScrollReveal().reveal(".phase", {
   ...scrollRevealOption,
-  interval: 1000,
+  interval: 500,
 });
 
 
@@ -171,13 +171,13 @@ ScrollReveal().reveal(".phase", {
 
 ScrollReveal().reveal(".faq-container .faq", {
   ...scrollRevealOption,
-  interval: 1000,
+  interval: 500,
   origin: "left",
 });
 
-ScrollReveal().reveal(".contact-container", {
+ScrollReveal().reveal(".contact-container .contact-card", {
   ...scrollRevealOption,
-  interval: 2000,
+  interval: 1000,
   origin: "left",
 });
 
