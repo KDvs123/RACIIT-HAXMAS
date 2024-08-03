@@ -7,6 +7,8 @@
 body,
 html {
   scroll-behavior: smooth;
+  
+  
 }
 
 body {
@@ -14,8 +16,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
   height: 100vh;
   background-color: #1e1f22;
   transition: background-image 1s ease-in-out;
@@ -353,27 +355,7 @@ h1 {
   color: #2fc18c;
 }
 
-@media (max-width: 768px) {
-  .aboutus-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .phase {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .phase h2 {
-    text-align: center;
-  }
-  .phase p {
-    text-align: center;
-  }
-  .phase img {
-    position: static;
-    margin: 0 auto 20px;
-  }
-}
+
 /* Price Awards Styling */
 
 .prizes-section {
@@ -431,6 +413,8 @@ h1 {
 .prize-highlight {
   transform: scale(1.25);
 }
+
+
 
 /* FAQ Section */
 
@@ -500,27 +484,116 @@ svg {
   transition: transform 0.5s ease-in;
 }
 
+/* Media Queries */
+
+/* Large devices (desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  .faq-section {
+    padding: 120px 40px;
+  }
+
+  .faq-section h2 {
+    font-size: 3em;
+  }
+
+  .faq {
+    width: 60%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .faq-section {
+    padding: 80px 30px;
+  }
+
+  .faq-section h2 {
+    font-size: 2.5em;
+  }
+
+  .faq {
+    width: 70%;
+  }
+
+  .faq-question p {
+    font-size: 1.1em;
+  }
+
+  .faq-answer p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .faq-section {
+    padding: 60px 20px;
+  }
+
+  .faq-section h2 {
+    font-size: 2em;
+  }
+
+  .faq {
+    width: 90%;
+  }
+
+  .faq-question p {
+    font-size: 1em;
+  }
+
+  .faq-answer p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .faq-section {
+    padding: 40px 10px;
+  }
+
+  .faq-section h2 {
+    font-size: 1.8em;
+  }
+
+  .faq {
+    width: 95%;
+  }
+
+  .faq-question p {
+    font-size: 0.9em;
+  }
+
+  .faq-answer p {
+    font-size: 1.1rem;
+  }
+} */
 
 /* Contact Us Card */
 
 
 .contact-section {
-    
+  
     padding: 50px;
-    margin-left: 100px;
     
 }
 
 .contact-section h2 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-top:100px;
     font-size: 3em;
     color: #bbb;
+    margin-left: 170px;
 }
 
 .contact-container {
     display: flex;
-   
+     border:1px solid red;
     flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .contact-card{
