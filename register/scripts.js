@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let step = 0;
   let teamName = "";
 
+  // Steps with messages that should appear in the chatbot message span
   const steps = [
+    "Hi Welcome to Haxmas 2024 Please Enter your team Name",
     "Great! Now, please enter your name.",
     "Nice to meet you! Now, please enter your email.",
     "Almost done! Please enter your contact number.",
@@ -46,10 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
         i++;
       } else {
         clearInterval(interval);
-        userInputContainer.style.display = "flex"; // Show input field
+        userInputContainer.style.display = "flex"; // Show input field after typing animation
       }
     }, delay);
   };
+
+  // Initialize the conversation with the first message
+  appendMessage(steps[step]);
 
   submitBtn.addEventListener("click", () => {
     const userInput = userInputField.value.trim();
@@ -63,9 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     userInputContainer.style.display = "none"; // Hide input field before showing next message
     setTimeout(() => {
-      appendMessage(steps[step]);
       step++;
       if (step < steps.length) {
+        appendMessage(steps[step]);
         userInputField.value = "";
         userInputField.placeholder = steps[step].split(" ").slice(-2).join(" ");
       } else {
