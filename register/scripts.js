@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let teamMembersCount = 0;
   let currentMember = 0;
 
-  // Steps with messages that should appear in the chatbot message span
   const steps = [
     "Hi Welcome to Haxmas 2024! I'm HaxmasBot, your assistant for registration today.",
     "First of all, let's have a team name, shall we? Enter your team name to start with:",
@@ -58,16 +57,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const addRadioButtons = () => {
     userInputContainer.innerHTML = ""; // Clear previous input elements
     const radioContainer = document.createElement("div");
+    radioContainer.classList.add("radio-container");
     const options = [2, 3, 4, 5];
 
     options.forEach((option) => {
       const label = document.createElement("label");
-      label.textContent = option;
       const radioInput = document.createElement("input");
       radioInput.type = "radio";
       radioInput.name = "team-members";
       radioInput.value = option;
-      radioContainer.appendChild(radioInput);
+      label.textContent = option;
+      label.prepend(radioInput);
       radioContainer.appendChild(label);
     });
 
@@ -78,30 +78,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const addMemberInputs = () => {
     userInputContainer.innerHTML = ""; // Clear previous input elements
 
+    const memberDetails = document.createElement("div");
+    memberDetails.classList.add("member-details");
+
+    const nameGroup = document.createElement("div");
+    nameGroup.classList.add("member-details-row");
     const nameLabel = document.createElement("label");
     nameLabel.textContent = "Name:";
     const nameInput = document.createElement("input");
     nameInput.type = "text";
     nameInput.id = "member-name";
+    nameGroup.appendChild(nameLabel);
+    nameGroup.appendChild(nameInput);
 
+    const emailGroup = document.createElement("div");
+    emailGroup.classList.add("member-details-row");
     const emailLabel = document.createElement("label");
     emailLabel.textContent = "Email:";
     const emailInput = document.createElement("input");
     emailInput.type = "email";
     emailInput.id = "member-email";
+    emailGroup.appendChild(emailLabel);
+    emailGroup.appendChild(emailInput);
 
+    const phoneGroup = document.createElement("div");
+    phoneGroup.classList.add("member-details-row");
     const phoneLabel = document.createElement("label");
     phoneLabel.textContent = "Phone Number:";
     const phoneInput = document.createElement("input");
     phoneInput.type = "number";
     phoneInput.id = "member-phone";
+    phoneGroup.appendChild(phoneLabel);
+    phoneGroup.appendChild(phoneInput);
 
-    userInputContainer.appendChild(nameLabel);
-    userInputContainer.appendChild(nameInput);
-    userInputContainer.appendChild(emailLabel);
-    userInputContainer.appendChild(emailInput);
-    userInputContainer.appendChild(phoneLabel);
-    userInputContainer.appendChild(phoneInput);
+    memberDetails.appendChild(nameGroup);
+    memberDetails.appendChild(emailGroup);
+    memberDetails.appendChild(phoneGroup);
+
+    userInputContainer.appendChild(memberDetails);
     userInputContainer.appendChild(submitBtn); // Reattach submit button
   };
 

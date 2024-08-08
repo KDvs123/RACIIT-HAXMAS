@@ -49,13 +49,6 @@ body {
     justify-content: flex-end;
 }
 
-.user-input {
-    display: none; /* Hide by default */
-    padding: 20px;
-
-    background-color: #131313;
-}
-
 #user-input-field {
     flex: 1;
     padding: 15px;
@@ -77,6 +70,67 @@ body {
     border-radius: 5px;
     margin-left: 10px;
     outline: none;
+    display: block;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.radio-container label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.radio-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.member-details .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.member-details label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.member-details input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    background-color: #131313;
+    color: white;
+    outline: none;
+}
+
+.member-details-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.member-details-row label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.member-details-row input {
+    flex: 1;
 }
 
 @keyframes fadeIn {
